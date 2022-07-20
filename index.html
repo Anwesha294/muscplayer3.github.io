@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+       
+<body>
+    
+    <nav>
+      <ul>
+        <li class="logo"><img src="spotify.jpg" alt="music"></li>
+        <li>Home</li>
+        <li>Genre</li>
+        <li>Trending</li>
+        <li>favourites</li>
+        <li><a href="#">👤</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="songlist">
+        <h1>Best of Albums</h1>
+        <div class="songitemcontainer">
+            <div class="songItem" id="icon1">
+                <img src="mus.jpg" alt="mus">
+                <span>salam-E-Ishq</span>
+                <span class="songlistplay"><span class="time">05:01 <i class="fa-solid fa-circle-play"></i> </span></span>
+            </div>
+            <div class="songItem" id="icon2">
+                <img src="mus.jpg" alt="mus">
+                <span>kesariya tera</span>
+                <span class="songlistplay"><span class="time">04:28 <i class="fa-solid fa-circle-play"></i> </span></span>
+            </div>
+            <div class="songItem" id="icon3">
+                <img src="mus.jpg" alt="gi ">
+                <span>tum se hi</span>
+                <span class="songlistplay"><span class="time">05:23 <i class="fa-solid fa-circle-play"></i> </span></span>
+            </div>
+            <div class="songItem" id="icon4">
+                <img src="mus.jpg" alt="mus">
+                <span>apna har din aise jiyo</span>
+                <span class="songlistplay"><span class="time">05:35 <i class="fa-solid fa-circle-play"></i> </span></span>
+            </div>
+           
+            </div>
+      </div>
+      <audio src="./04. Salaam-E-Ishq.mp3" id="mysong1"></audio>
+      <audio src="./Kesariya Tera Ishq Hai Piya(PagalWorld.com.se).mp3" id="mysong2" ></audio>
+      <audio src="./Tum Se Hi (Jab We Met) - Mohit Chauhan - 320Kbps.mp3" id="mysong3"></audio>
+      <audio src="./Apna Har Din 128 Kbps.mp3" id="mysong4"></audio>
+      
+    </div>
+   
+   
+   
+   
+   
+   
+    <div class="bottom">
+      <input type="range" name="range" id="myprogressbar" min="0" max="100"><br>
+      <div class="icons">
+        <i class="fa-solid fa-forward"></i>
+        <i class="fa-solid fa-circle-play" id="masterplay"></i>
+        <i class="fa-solid fa-backward"></i>
+      </div>
+      <div class="songInfo">
+        <img src="gif.jpg" alt="gif" width="60px">
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/8976d278e9.js" crossorigin="anonymous"></script>
+    <script src="./javascript.js"></script>
+</body>
+</html>
