@@ -1,65 +1,32 @@
-var icon1=document.getElementById("icon1");
-var mysong1=document.getElementById("mysong1");
+var selected,prev=null;
 
-var play=document.getElementById('play');
-icon1.onclick=function()
-{
-    i=0;
-    if(mysong1.paused)
-    {
-        mysong1.play();
-
-    }
+ document.getElementsByClassName("songitemcontainer")[0].addEventListener("click",f);
+ document.getElementsByClassName("songitemcontainer")[1].addEventListener("click",f);
+ document.getElementsByClassName("songitemcontainer")[2].addEventListener("click",f);
+ document.getElementsByClassName("songitemcontainer")[3].addEventListener("click",f);
+ function f(e)
+ {
+    selected=e.target.children[2];
+    if(prev==null)prev=e.target.children[2];
     else{
-        mysong1.pause();
+        if(prev!=selected){
+        prev.pause();
+        prev=e.target.children[2];}
     }
-}
-var icon2=document.getElementById("icon2");
-var mysong2=document.getElementById("mysong2");
-
-var play=document.getElementById('play');
-icon2.onclick=function()
-{
-    i=1;
-    if(mysong2.paused)
-    {
-        mysong2.play();
-
-    }
-    else{
-        mysong2.pause();
-    }
-}
-var icon3=document.getElementById("icon3");
-var mysong3=document.getElementById("mysong3");
-
-var play=document.getElementById('play');
-icon3.onclick=function()
-{
-    i=2;
-    if(mysong3.paused)
-    {
-        mysong3.play();
-
-    }
-    else{
-        mysong3.pause();
-    }
-}
-var icon4=document.getElementById("icon4");
-var mysong4=document.getElementById("mysong4");
-
-var play=document.getElementById('play');
-icon4.onclick=function()
-{
-    i=3;
-    if(mysong4.paused)
-    {
-        mysong4.play();
-
-    }
-    else{
-        mysong4.pause();
-    }
-}
-
+     if(selected.paused)
+     {
+         selected.play();
+     }
+     else{
+        selected.pause();
+     }
+ }
+ document.getElementsByClassName("bottom")[0].onclick=function(){
+    if(selected.paused)
+     {
+         selected.play();
+     }
+     else{
+        selected.pause();
+     }
+ }
