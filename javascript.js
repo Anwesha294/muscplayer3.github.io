@@ -25,7 +25,6 @@ var selected;
   }
 var pr=null;
   var a=Array.from(document.getElementsByTagName("audio"));
-
   a.forEach(element => {
   element.addEventListener("play",ply);});
   function ply(e){
